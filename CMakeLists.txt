@@ -4,7 +4,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 project(byoo_dbot VERSION 1.0 DESCRIPTION "General purpose discord bot")
 
-# Add local dpp library
 find_library(DPP_LIBRARY NAMES dpp "libdpp.a" PATHS ${DPP_ROOT_DIR})
 find_path(DPP_INCLUDE Names dpp/dpp.h PATHS ${DPP_ROOT_DIR})
 
@@ -15,7 +14,7 @@ find_path(DPP_INCLUDE Names dpp/dpp.h PATHS ${DPP_ROOT_DIR})
 # add_definitions(-DBOOST_LOG_USE_CHAR)
 
 # Add project sources
-file(GLOB_RECURSE SOURCES "../src/*.cpp")
+file(GLOB_RECURSE SOURCES "src/*.cpp")
 
 # Add project include directories
 include_directories(../inc)

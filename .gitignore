@@ -1,6 +1,5 @@
 # Secrets
 config.json
-bot.token
 
 # CMake
 /build/CMakeCache.txt
